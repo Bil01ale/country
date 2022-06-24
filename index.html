@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flags</title>
+    <style>
+        body {
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+            display: flex;
+            justify-content: center;
+        }
+
+        #container {
+            border-style: groove;
+            border-radius: 7px;
+            width: 350px;
+            height: 400px;
+            background-color: rgb(71, 69, 69);
+            text-align: center;
+        }
+
+        .button {
+            background-color: blueviolet;
+            border-color: transparent;
+            width: 50%;
+            height: 40px;
+            border-radius: 10px;
+        }
+
+        span {
+            color: whitesmoke;
+            font-weight: 1000;
+            letter-spacing: 1px;
+        }
+
+        img {
+            width: 55%;
+        }
+
+        main {
+            margin: 0;
+        }
+        p{
+            color: whitesmoke;
+            font-weight: bolder;
+            letter-spacing: 1.5px;
+            padding-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <div class="main">
+            <div id="inner_container">
+                <img id="image_shower">
+            </div>
+            <div id="button_container">
+                <button class="button" onclick="get_random_image()"><span>START</span></button>
+            </div>
+            <p>Telga zebbi ghir makalh tsiyi</p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    image_array = [
+        '1.PNG',
+        '2.PNG',
+        '3.PNG',
+        '4.PNG',
+        '5.PNG',
+        '6.PNG',
+        '7.PNG',
+        '8.PNG',
+        '9.PNG',
+        '10.PNG',
+        '11.png',
+        '12.PNG',
+        '13.PNG',
+        '14.PNG',
+        '15.PNG',
+        '16.PNG',
+        '17.PNG',
+        '18.PNG',
+        '19.PNG',
+        '20.PNG',
+        '21.PNG',
+        '22.PNG',
+        '23.PNG',
+        '24.PNG',
+        '25.PNG',
+        '26.PNG',
+        '27.PNG',
+        '28.PNG',
+        '29.PNG',
+        '30.PNG',
+        '31.PNG',
+        '32.PNG',
+        '33.PNG',
+        '34.PNG',
+        '35.PNG',
+        '36.PNG',
+        '37.PNG',
+        '38.PNG',
+        '39.PNG',
+        '40.PNG',
+        '41.PNG',
+        '42.PNG',
+        '43.PNG',
+        '44.PNG',
+        '45.PNG',
+        '46.PNG',
+        '47.PNG',
+        '48.PNG',
+        /*asia*/
+        '49.PNG',
+        '50.PNG',
+        '51.PNG',
+        '52.PNG',
+        '53.PNG',
+        '54.PNG',
+        '55.PNG',
+        '56.PNG',
+        '57.PNG',
+        '58.PNG',
+        '59.PNG',
+        '60.PNG',
+        '61.PNG',
+        '62.PNG',
+        '63.PNG',
+        '64.PNG',
+        '65.PNG',
+        '66.PNG',
+        '67.PNG',
+        '68.PNG',
+        '69.PNG',
+        '70.PNG',
+        '71.PNG',
+        /*afrika*/
+        '72.PNG',
+        '73.PNG',
+        '74.PNG',
+        '75.PNG',
+        '76.PNG',
+        '77.PNG',
+        '78.PNG',
+        '79.PNG',
+        '80.PNG',
+        '81.PNG',
+        '82.PNG',
+        '83.PNG',
+        '84.PNG',
+        '85.PNG',
+        '86.PNG',
+        '87.PNG',
+        '88.PNG',
+        '89.PNG',
+        '90.PNG',
+        '91.PNG',
+        '92.PNG',
+        '93.PNG',
+        '94.PNG',
+        '95.PNG',
+        '96.PNG',
+        '97.PNG',
+        /*oceanosia*/
+        '98.PNG',
+        '99.PNG',
+        '100.PNG',
+        '101.PNG',
+        '102.PNG',
+        '103.PNG',
+    ]
+    function get_random_image() {
+        random_index = Math.floor(Math.random() * image_array.length);
+        selected_image = image_array[random_index]
+        document.getElementById('image_shower').src = `./flags/${selected_image}`
+    }
+</script>
